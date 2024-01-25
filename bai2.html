@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    document.write(`<h1>bai 2</h1>`);
+    let mang = [6,6,24,5,6,8,7,9,4,5,10,15]
+    let index = 5;
+    function tryRemoveFromArray(){
+        if (index < 0){
+            return mang;
+        }else {
+            for (let i = 0;i<mang.length;i++){
+                if (index == mang[i]){
+                    mang.splice(i,1);
+                }
+            }
+            return mang;
+        }
+    }
+    tryRemoveFromArray();
+    document.write(mang);
+</script>
+</body>
+</html>
